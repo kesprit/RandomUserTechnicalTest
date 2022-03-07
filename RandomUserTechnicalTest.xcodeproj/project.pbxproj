@@ -46,6 +46,7 @@
 		80319E1F27D69A300088228B /* XCTestCase+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E1E27D69A300088228B /* XCTestCase+extension.swift */; };
 		80319E2127D69A720088228B /* UsersUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E2027D69A720088228B /* UsersUseCaseTests.swift */; };
 		80319E2427D6B3B30088228B /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E2327D6B3B30088228B /* UserDetailViewController.swift */; };
+		80319E2727D6B5200088228B /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E2627D6B5200088228B /* UserDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		80319E1E27D69A300088228B /* XCTestCase+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+extension.swift"; sourceTree = "<group>"; };
 		80319E2027D69A720088228B /* UsersUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersUseCaseTests.swift; sourceTree = "<group>"; };
 		80319E2327D6B3B30088228B /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		80319E2627D6B5200088228B /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				80319E2327D6B3B30088228B /* UserDetailViewController.swift */,
+				80319E2627D6B5200088228B /* UserDetailViewModel.swift */,
 			);
 			path = UserDetail;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				80319D9F27D684080088228B /* SceneDelegate.swift in Sources */,
 				80319DFA27D68EC30088228B /* UsersDatabase.swift in Sources */,
 				80319DE827D68CD80088228B /* RemoteDataProviderProtocol.swift in Sources */,
+				80319E2727D6B5200088228B /* UserDetailViewModel.swift in Sources */,
 				80319DF527D68DF80088228B /* UserRemoteRepositoryProtocol.swift in Sources */,
 				80319E0527D68FC40088228B /* UserLocalRepositoryProtocol.swift in Sources */,
 				80319DDF27D68AD90088228B /* UserRowTableViewCell.swift in Sources */,
