@@ -8,24 +8,37 @@
 import Foundation
 
 struct UserViewModel {
-     let firstName: String
-     let lastName: String
-     let email: String
- }
+    let firstName: String
+    let lastName: String
+    let email: String
+    let gender: String
+    let age: Int
+    let birthday: Date
+    let streetNumber: Int
+    let streetName: String
+    let city: String
+    let state: String
+    let pictureStringUrl: String
+}
 
- extension UserViewModel {
-     var username: String {
-         "\(firstName) \(lastName)"
-     }
-
-     var profile: String {
-         .init("👩‍🦳👳🏼‍♂️👶👧🏽🧔🏻‍♀️🧑🏿‍🦲👱🏼‍♀️👨🏻‍🦰👴🏼👲🏼🧑🏿‍🦰👱🏿‍♂️".randomElement()!)
-     }
- }
-
- #warning("This extension should be delete")
- extension UserViewModel {
-     static var mock: UserViewModel {
-         .init(firstName: "John", lastName: "Doe", email: "jdo@mail.com")
-     }
- }
+extension UserViewModel {
+    var username: String {
+        "\(firstName) \(lastName)"
+    }
+    
+    var formattedBirthday: String {
+        let formatter = DateFormatter()
+        formatter.timeZone = .current
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        return formatter.string(from: birthday)
+    }
+    
+    var formattedAddress: String {
+        "\(streetNumber)" + " " + streetName + ", " + city
+    }
+    
+    var profile: String {
+        .init("👩‍🦳👳🏼‍♂️👶👧🏽🧔🏻‍♀️🧑🏿‍🦲👱🏼‍♀️👨🏻‍🦰👴🏼👲🏼🧑🏿‍🦰👱🏿‍♂️".randomElement()!)
+    }
+}

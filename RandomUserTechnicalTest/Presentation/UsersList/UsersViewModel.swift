@@ -8,7 +8,7 @@
 import Foundation
 
 final class UsersViewModel: ObservableObject {
-    @Published var users: [UserViewModel] = [.mock, .mock]
+    @Published var users: [UserViewModel] = []
     
     init() { }
     
