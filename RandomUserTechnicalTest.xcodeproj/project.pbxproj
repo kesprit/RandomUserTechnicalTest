@@ -33,6 +33,8 @@
 		80319DFD27D68F2D0088228B /* LocalDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DFC27D68F2D0088228B /* LocalDataProviderProtocol.swift */; };
 		80319DFF27D68F420088228B /* LocalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DFE27D68F420088228B /* LocalDataProvider.swift */; };
 		80319E0227D68F900088228B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E0127D68F900088228B /* User.swift */; };
+		80319E0527D68FC40088228B /* UserLocalRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E0427D68FC40088228B /* UserLocalRepositoryProtocol.swift */; };
+		80319E0727D68FD40088228B /* UserLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E0627D68FD40088228B /* UserLocalRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		80319DFC27D68F2D0088228B /* LocalDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataProviderProtocol.swift; sourceTree = "<group>"; };
 		80319DFE27D68F420088228B /* LocalDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataProvider.swift; sourceTree = "<group>"; };
 		80319E0127D68F900088228B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		80319E0427D68FC40088228B /* UserLocalRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalRepositoryProtocol.swift; sourceTree = "<group>"; };
+		80319E0627D68FD40088228B /* UserLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +260,7 @@
 		80319DF827D68EB40088228B /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				80319E0327D68FAD0088228B /* Repository */,
 				80319E0027D68F790088228B /* Model */,
 				80319DFB27D68F250088228B /* Provider */,
 				80319DF927D68EC30088228B /* UsersDatabase.swift */,
@@ -278,6 +283,15 @@
 				80319E0127D68F900088228B /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		80319E0327D68FAD0088228B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				80319E0427D68FC40088228B /* UserLocalRepositoryProtocol.swift */,
+				80319E0627D68FD40088228B /* UserLocalRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +440,7 @@
 				80319DFA27D68EC30088228B /* UsersDatabase.swift in Sources */,
 				80319DE827D68CD80088228B /* RemoteDataProviderProtocol.swift in Sources */,
 				80319DF527D68DF80088228B /* UserRemoteRepositoryProtocol.swift in Sources */,
+				80319E0527D68FC40088228B /* UserLocalRepositoryProtocol.swift in Sources */,
 				80319DDF27D68AD90088228B /* UserRowTableViewCell.swift in Sources */,
 				80319DFD27D68F2D0088228B /* LocalDataProviderProtocol.swift in Sources */,
 				80319DFF27D68F420088228B /* LocalDataProvider.swift in Sources */,
@@ -436,6 +451,7 @@
 				80319DF227D68DAC0088228B /* UserRemoteResponse.swift in Sources */,
 				80319DF027D68D9B0088228B /* UserRemote.swift in Sources */,
 				80319DD927D6888B0088228B /* UsersListViewController.swift in Sources */,
+				80319E0727D68FD40088228B /* UserLocalRepository.swift in Sources */,
 				80319E0227D68F900088228B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
