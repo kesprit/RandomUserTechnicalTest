@@ -27,6 +27,8 @@
 		80319DED27D68D460088228B /* RemoteConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DEC27D68D460088228B /* RemoteConfiguration.swift */; };
 		80319DF027D68D9B0088228B /* UserRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DEF27D68D9B0088228B /* UserRemote.swift */; };
 		80319DF227D68DAC0088228B /* UserRemoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DF127D68DAC0088228B /* UserRemoteResponse.swift */; };
+		80319DF527D68DF80088228B /* UserRemoteRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DF427D68DF80088228B /* UserRemoteRepositoryProtocol.swift */; };
+		80319DF727D68E080088228B /* UserRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DF627D68E080088228B /* UserRemoteRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		80319DEC27D68D460088228B /* RemoteConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfiguration.swift; sourceTree = "<group>"; };
 		80319DEF27D68D9B0088228B /* UserRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemote.swift; sourceTree = "<group>"; };
 		80319DF127D68DAC0088228B /* UserRemoteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteResponse.swift; sourceTree = "<group>"; };
+		80319DF427D68DF80088228B /* UserRemoteRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteRepositoryProtocol.swift; sourceTree = "<group>"; };
+		80319DF627D68E080088228B /* UserRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,7 @@
 		80319DE027D68C330088228B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				80319DF327D68DD80088228B /* Repository */,
 				80319DEE27D68D7E0088228B /* Model */,
 				80319DE627D68CCE0088228B /* Provider */,
 				80319DE127D68C3E0088228B /* Endpoint */,
@@ -228,6 +233,15 @@
 				80319DF127D68DAC0088228B /* UserRemoteResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		80319DF327D68DD80088228B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				80319DF427D68DF80088228B /* UserRemoteRepositoryProtocol.swift */,
+				80319DF627D68E080088228B /* UserRemoteRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,10 +388,12 @@
 				80319DDB27D689990088228B /* UsersViewModel.swift in Sources */,
 				80319D9F27D684080088228B /* SceneDelegate.swift in Sources */,
 				80319DE827D68CD80088228B /* RemoteDataProviderProtocol.swift in Sources */,
+				80319DF527D68DF80088228B /* UserRemoteRepositoryProtocol.swift in Sources */,
 				80319DDF27D68AD90088228B /* UserRowTableViewCell.swift in Sources */,
 				80319DDD27D68A340088228B /* UserViewModel.swift in Sources */,
 				80319DED27D68D460088228B /* RemoteConfiguration.swift in Sources */,
 				80319DEA27D68CF40088228B /* RemoteDataProvider.swift in Sources */,
+				80319DF727D68E080088228B /* UserRemoteRepository.swift in Sources */,
 				80319DF227D68DAC0088228B /* UserRemoteResponse.swift in Sources */,
 				80319DF027D68D9B0088228B /* UserRemote.swift in Sources */,
 				80319DD927D6888B0088228B /* UsersListViewController.swift in Sources */,

@@ -25,3 +25,9 @@ struct UserEnpoint: Endpoint {
         ]
     }
 }
+
+extension Endpoint where Self == UserEnpoint {
+    static func users(baseUrl: String, results: Int, seed: String? = nil) -> Self {
+        UserEnpoint(baseUrl: baseUrl, results: results, seed: seed)
+    }
+}
