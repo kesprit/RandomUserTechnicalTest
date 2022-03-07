@@ -7,8 +7,12 @@
 
 import Foundation
 
- final class UsersViewModel: ObservableObject {
-     @Published var users: [UserViewModel] = [.mock, .mock]
-     
-     init() { }
- }
+final class UsersViewModel: ObservableObject {
+    @Published var users: [UserViewModel] = [.mock, .mock]
+    
+    init() { }
+    
+    func fetchUsers() { }
+    
+    func fetchMoreUsers() { }
+}

@@ -37,10 +37,16 @@ final class UsersListViewController: UITableViewController {
         return cell
     }
     
+    // MARK: - ScrollView
+     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+         guard scrollView.contentOffset.y > (tableView.contentSize.height-100) - scrollView.frame.size.height else { return }
+         viewModel.fetchMoreUsers()
+     }
     
     // MARK: private functions
     private func setup() {
         title = "RandomUser"
         tableView.register(UserRowTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        viewModel.fetchUsers()
     }
 }
