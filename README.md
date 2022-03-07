@@ -12,7 +12,7 @@
 
 ## Architecture
 
-It's an MVVM architecture with Clean Architecture for the business part.
+It's a MVVM architecture with Clean Architecture for the business part.
 I choose MVVM because I think this architure is the most famous in the IT community and can be understand by many people.
 It's not too simple like MVC and not too complex like VIPER.
 
