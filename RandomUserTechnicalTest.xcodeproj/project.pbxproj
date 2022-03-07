@@ -24,6 +24,7 @@
 		80319DE527D68C790088228B /* UserEnpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DE427D68C790088228B /* UserEnpoint.swift */; };
 		80319DE827D68CD80088228B /* RemoteDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DE727D68CD80088228B /* RemoteDataProviderProtocol.swift */; };
 		80319DEA27D68CF40088228B /* RemoteDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DE927D68CF40088228B /* RemoteDataProvider.swift */; };
+		80319DED27D68D460088228B /* RemoteConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DEC27D68D460088228B /* RemoteConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		80319DE427D68C790088228B /* UserEnpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEnpoint.swift; sourceTree = "<group>"; };
 		80319DE727D68CD80088228B /* RemoteDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataProviderProtocol.swift; sourceTree = "<group>"; };
 		80319DE927D68CF40088228B /* RemoteDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataProvider.swift; sourceTree = "<group>"; };
+		80319DEC27D68D460088228B /* RemoteConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 		80319DD427D6880C0088228B /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				80319DEB27D68D350088228B /* Configuration */,
 				80319DE027D68C330088228B /* Network */,
 			);
 			path = Data;
@@ -203,6 +206,14 @@
 				80319DE927D68CF40088228B /* RemoteDataProvider.swift */,
 			);
 			path = Provider;
+			sourceTree = "<group>";
+		};
+		80319DEB27D68D350088228B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				80319DEC27D68D460088228B /* RemoteConfiguration.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +362,7 @@
 				80319DE827D68CD80088228B /* RemoteDataProviderProtocol.swift in Sources */,
 				80319DDF27D68AD90088228B /* UserRowTableViewCell.swift in Sources */,
 				80319DDD27D68A340088228B /* UserViewModel.swift in Sources */,
+				80319DED27D68D460088228B /* RemoteConfiguration.swift in Sources */,
 				80319DEA27D68CF40088228B /* RemoteDataProvider.swift in Sources */,
 				80319DD927D6888B0088228B /* UsersListViewController.swift in Sources */,
 			);
