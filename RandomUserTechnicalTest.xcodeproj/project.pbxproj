@@ -17,6 +17,8 @@
 		80319DCE27D686FC0088228B /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 80319DCD27D686FC0088228B /* GRDB */; };
 		80319DD127D687130088228B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 80319DD027D687130088228B /* Kingfisher */; };
 		80319DD927D6888B0088228B /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DD827D6888B0088228B /* UsersListViewController.swift */; };
+		80319DDB27D689990088228B /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DDA27D689990088228B /* UsersViewModel.swift */; };
+		80319DDD27D68A340088228B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DDC27D68A340088228B /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		80319DBD27D6840A0088228B /* RandomUserTechnicalTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserTechnicalTestUITests.swift; sourceTree = "<group>"; };
 		80319DBF27D6840A0088228B /* RandomUserTechnicalTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserTechnicalTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		80319DD827D6888B0088228B /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		80319DDA27D689990088228B /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		80319DDC27D68A340088228B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				80319DD527D688260088228B /* UsersList */,
+				80319DDC27D68A340088228B /* UserViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 		80319DD527D688260088228B /* UsersList */ = {
 			isa = PBXGroup;
 			children = (
+				80319DDA27D689990088228B /* UsersViewModel.swift */,
 				80319DD827D6888B0088228B /* UsersListViewController.swift */,
 			);
 			path = UsersList;
@@ -299,7 +305,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				80319D9D27D684080088228B /* AppDelegate.swift in Sources */,
+				80319DDB27D689990088228B /* UsersViewModel.swift in Sources */,
 				80319D9F27D684080088228B /* SceneDelegate.swift in Sources */,
+				80319DDD27D68A340088228B /* UserViewModel.swift in Sources */,
 				80319DD927D6888B0088228B /* UsersListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
