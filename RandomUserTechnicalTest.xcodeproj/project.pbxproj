@@ -43,6 +43,8 @@
 		80319E1527D696DF0088228B /* UserRemote+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E1427D696DF0088228B /* UserRemote+mock.swift */; };
 		80319E1727D6972D0088228B /* UserLocalRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E1627D6972D0088228B /* UserLocalRepositoryMock.swift */; };
 		80319E1927D697550088228B /* User+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E1827D697550088228B /* User+mock.swift */; };
+		80319E1C27D699980088228B /* UserViewModel+equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E1B27D699980088228B /* UserViewModel+equatable.swift */; };
+		80319E1F27D69A300088228B /* XCTestCase+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E1E27D69A300088228B /* XCTestCase+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		80319E1427D696DF0088228B /* UserRemote+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserRemote+mock.swift"; sourceTree = "<group>"; };
 		80319E1627D6972D0088228B /* UserLocalRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalRepositoryMock.swift; sourceTree = "<group>"; };
 		80319E1827D697550088228B /* User+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+mock.swift"; sourceTree = "<group>"; };
+		80319E1B27D699980088228B /* UserViewModel+equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserViewModel+equatable.swift"; sourceTree = "<group>"; };
+		80319E1E27D69A300088228B /* XCTestCase+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 		80319DB227D6840A0088228B /* RandomUserTechnicalTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				80319E1D27D699CB0088228B /* Extension */,
 				80319E1127D696670088228B /* Mock */,
 				80319DB327D6840A0088228B /* RandomUserTechnicalTestTests.swift */,
 			);
@@ -332,6 +337,15 @@
 				80319E1827D697550088228B /* User+mock.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		80319E1D27D699CB0088228B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				80319E1B27D699980088228B /* UserViewModel+equatable.swift */,
+				80319E1E27D69A300088228B /* XCTestCase+extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,10 +518,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80319E1C27D699980088228B /* UserViewModel+equatable.swift in Sources */,
 				80319E1727D6972D0088228B /* UserLocalRepositoryMock.swift in Sources */,
 				80319E1327D696820088228B /* UserRemoteRepositoryMock.swift in Sources */,
 				80319DB427D6840A0088228B /* RandomUserTechnicalTestTests.swift in Sources */,
 				80319E1527D696DF0088228B /* UserRemote+mock.swift in Sources */,
+				80319E1F27D69A300088228B /* XCTestCase+extension.swift in Sources */,
 				80319E1927D697550088228B /* User+mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
