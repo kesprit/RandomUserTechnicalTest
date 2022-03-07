@@ -63,6 +63,7 @@ import UIKit
 
      private func setupUI() {
          addSubview(horizontalStackView)
+         iconLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
          horizontalStackView.topAnchor.constraint(equalTo: topAnchor, constant: spacing).isActive = true
          horizontalStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -spacing).isActive = true
          horizontalStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: spacing).isActive = true

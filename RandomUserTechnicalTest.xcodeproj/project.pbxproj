@@ -20,6 +20,7 @@
 		80319DDB27D689990088228B /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DDA27D689990088228B /* UsersViewModel.swift */; };
 		80319DDD27D68A340088228B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DDC27D68A340088228B /* UserViewModel.swift */; };
 		80319DDF27D68AD90088228B /* UserRowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DDE27D68AD90088228B /* UserRowTableViewCell.swift */; };
+		80319DE327D68C4C0088228B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DE227D68C4C0088228B /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		80319DDA27D689990088228B /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		80319DDC27D68A340088228B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		80319DDE27D68AD90088228B /* UserRowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowTableViewCell.swift; sourceTree = "<group>"; };
+		80319DE227D68C4C0088228B /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		80319DD427D6880C0088228B /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				80319DE027D68C330088228B /* Network */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -167,6 +170,22 @@
 				80319DDE27D68AD90088228B /* UserRowTableViewCell.swift */,
 			);
 			path = UsersList;
+			sourceTree = "<group>";
+		};
+		80319DE027D68C330088228B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				80319DE127D68C3E0088228B /* Endpoint */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		80319DE127D68C3E0088228B /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				80319DE227D68C4C0088228B /* Endpoint.swift */,
+			);
+			path = Endpoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80319DE327D68C4C0088228B /* Endpoint.swift in Sources */,
 				80319D9D27D684080088228B /* AppDelegate.swift in Sources */,
 				80319DDB27D689990088228B /* UsersViewModel.swift in Sources */,
 				80319D9F27D684080088228B /* SceneDelegate.swift in Sources */,
