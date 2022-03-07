@@ -9,7 +9,7 @@
 
 extension UserRemote {
     static var mock: UserRemote {
-        .init(name: .init(first: "Doe", last: "Doe"),
+        .init(name: .init(first: "John", last: "Doe"),
               email: "jdoe@mail.com",
               gender: "male",
               phone: "555-555-555",
