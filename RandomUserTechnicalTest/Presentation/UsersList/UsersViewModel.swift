@@ -10,7 +10,11 @@ import Foundation
 final class UsersViewModel: ObservableObject {
     @Published var users: [UserViewModel] = []
     
-    init() { }
+    private let userUseCase: UsersUseCaseProtocol
+    
+    init(userUseCase: UsersUseCaseProtocol) {
+        self.userUseCase = userUseCase
+    }
     
     func fetchUsers() { }
     
