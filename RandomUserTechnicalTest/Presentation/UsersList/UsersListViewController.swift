@@ -5,15 +5,18 @@
 //  Created by Kévin Esprit on 07/03/2022.
 //
 
+import Combine
 import UIKit
 
 final class UsersListViewController: UITableViewController {
     
     private let viewModel: UsersViewModel
     private let cellIdentifier = "userCellIdentifier"
+    private var cancelable: [AnyCancellable]
     
     init(viewModel: UsersViewModel) {
         self.viewModel = viewModel
+        self.cancelable = []
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -23,6 +26,7 @@ final class UsersListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindingViewModel()
         setup()
     }
     
@@ -48,5 +52,37 @@ final class UsersListViewController: UITableViewController {
         title = "RandomUser"
         tableView.register(UserRowTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         viewModel.fetchUsers()
+    }
+    
+    private func bindingViewModel() {
+        viewModel.$users
+            .receive(on: DispatchQueue.main)
+            .sink { _ in
+            } receiveValue: {[weak self] users in
+                self?.tableView.reloadData()
+            }
+            .store(in: &cancelable)
+        
+        viewModel.$isLoading
+            .receive(on: DispatchQueue.main)
+            .sink { _ in
+            } receiveValue: {[weak self] isLoading in
+                self?.tableView.tableFooterView = isLoading ? UIActivityIndicatorView(style: .large) : nil
+            }
+            .store(in: &cancelable)
+        
+        viewModel.$showError
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] value in
+                if value {
+                    self?.showGenericError()
+                }
+            }
+            .store(in: &cancelable)
+    }
+    
+    // MARK: - GenericError
+    private func showGenericError() {
+        // TODO: Make an alert
     }
 }
