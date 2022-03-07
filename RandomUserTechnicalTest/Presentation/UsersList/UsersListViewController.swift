@@ -12,11 +12,11 @@ final class UsersListViewController: UITableViewController {
     
     private let viewModel: UsersViewModel
     private let cellIdentifier = "userCellIdentifier"
-    private var cancelable: [AnyCancellable]
+    private var cancelable: [AnyCancellable] = []
+    private let refreshController: UIRefreshControl = .init()
     
     init(viewModel: UsersViewModel) {
         self.viewModel = viewModel
-        self.cancelable = []
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -51,6 +51,9 @@ final class UsersListViewController: UITableViewController {
     private func setup() {
         title = "RandomUser"
         tableView.register(UserRowTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        refreshController.addAction(.init(handler: refresh), for: .valueChanged)
+        tableView.refreshControl = refreshController
+        bindingViewModel()
         viewModel.fetchUsers()
     }
     
@@ -94,5 +97,10 @@ final class UsersListViewController: UITableViewController {
     
     private func retryFetch(_ alert: UIAlertAction) {
         viewModel.fetchUsers()
+    }
+    
+    private func refresh(_ action: UIAction) {
+        viewModel.fetchUsers()
+        refreshController.endRefreshing()
     }
 }
