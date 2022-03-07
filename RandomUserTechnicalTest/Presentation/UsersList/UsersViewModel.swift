@@ -6,6 +6,7 @@
 //
 
 import Combine
+import UIKit
 
 final class UsersViewModel: ObservableObject {
     @Published var users: [UserViewModel] = []
@@ -18,9 +19,11 @@ final class UsersViewModel: ObservableObject {
     
     private let userUseCase: UsersUseCaseProtocol
     private var cancelable: AnyCancellable?
+    private weak var navigationController: UINavigationController?
     
-    init(userUseCase: UsersUseCaseProtocol) {
+    init(userUseCase: UsersUseCaseProtocol, navigationController: UINavigationController) {
         self.userUseCase = userUseCase
+        self.navigationController = navigationController
     }
     
     func fetchUsers() {
