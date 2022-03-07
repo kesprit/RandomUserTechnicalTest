@@ -14,6 +14,8 @@
 		80319DB427D6840A0088228B /* RandomUserTechnicalTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DB327D6840A0088228B /* RandomUserTechnicalTestTests.swift */; };
 		80319DBE27D6840A0088228B /* RandomUserTechnicalTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DBD27D6840A0088228B /* RandomUserTechnicalTestUITests.swift */; };
 		80319DC027D6840A0088228B /* RandomUserTechnicalTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DBF27D6840A0088228B /* RandomUserTechnicalTestUITestsLaunchTests.swift */; };
+		80319DCE27D686FC0088228B /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 80319DCD27D686FC0088228B /* GRDB */; };
+		80319DD127D687130088228B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 80319DD027D687130088228B /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80319DD127D687130088228B /* Kingfisher in Frameworks */,
+				80319DCE27D686FC0088228B /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +141,10 @@
 			dependencies = (
 			);
 			name = RandomUserTechnicalTest;
+			packageProductDependencies = (
+				80319DCD27D686FC0088228B /* GRDB */,
+				80319DD027D687130088228B /* Kingfisher */,
+			);
 			productName = RandomUserTechnicalTest;
 			productReference = 80319D9927D684080088228B /* RandomUserTechnicalTest.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +217,10 @@
 				Base,
 			);
 			mainGroup = 80319D9027D684080088228B;
+			packageReferences = (
+				80319DCC27D686FC0088228B /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+				80319DCF27D687130088228B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 80319D9A27D684080088228B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +600,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		80319DCC27D686FC0088228B /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		80319DCF27D687130088228B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80319DCD27D686FC0088228B /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80319DCC27D686FC0088228B /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+		80319DD027D687130088228B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80319DCF27D687130088228B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 80319D9127D684080088228B /* Project object */;
 }
