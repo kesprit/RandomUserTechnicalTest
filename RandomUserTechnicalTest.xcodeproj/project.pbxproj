@@ -19,6 +19,7 @@
 		80319DD927D6888B0088228B /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DD827D6888B0088228B /* UsersListViewController.swift */; };
 		80319DDB27D689990088228B /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DDA27D689990088228B /* UsersViewModel.swift */; };
 		80319DDD27D68A340088228B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DDC27D68A340088228B /* UserViewModel.swift */; };
+		80319DDF27D68AD90088228B /* UserRowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319DDE27D68AD90088228B /* UserRowTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		80319DD827D6888B0088228B /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
 		80319DDA27D689990088228B /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		80319DDC27D68A340088228B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		80319DDE27D68AD90088228B /* UserRowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				80319DDA27D689990088228B /* UsersViewModel.swift */,
 				80319DD827D6888B0088228B /* UsersListViewController.swift */,
+				80319DDE27D68AD90088228B /* UserRowTableViewCell.swift */,
 			);
 			path = UsersList;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				80319D9D27D684080088228B /* AppDelegate.swift in Sources */,
 				80319DDB27D689990088228B /* UsersViewModel.swift in Sources */,
 				80319D9F27D684080088228B /* SceneDelegate.swift in Sources */,
+				80319DDF27D68AD90088228B /* UserRowTableViewCell.swift in Sources */,
 				80319DDD27D68A340088228B /* UserViewModel.swift in Sources */,
 				80319DD927D6888B0088228B /* UsersListViewController.swift in Sources */,
 			);
