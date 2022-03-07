@@ -41,6 +41,8 @@
 		80319E1027D692720088228B /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E0F27D692720088228B /* AppDependencies.swift */; };
 		80319E1327D696820088228B /* UserRemoteRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E1227D696820088228B /* UserRemoteRepositoryMock.swift */; };
 		80319E1527D696DF0088228B /* UserRemote+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E1427D696DF0088228B /* UserRemote+mock.swift */; };
+		80319E1727D6972D0088228B /* UserLocalRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E1627D6972D0088228B /* UserLocalRepositoryMock.swift */; };
+		80319E1927D697550088228B /* User+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E1827D697550088228B /* User+mock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		80319E0F27D692720088228B /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		80319E1227D696820088228B /* UserRemoteRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteRepositoryMock.swift; sourceTree = "<group>"; };
 		80319E1427D696DF0088228B /* UserRemote+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserRemote+mock.swift"; sourceTree = "<group>"; };
+		80319E1627D6972D0088228B /* UserLocalRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalRepositoryMock.swift; sourceTree = "<group>"; };
+		80319E1827D697550088228B /* User+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+mock.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,6 +328,8 @@
 			children = (
 				80319E1227D696820088228B /* UserRemoteRepositoryMock.swift */,
 				80319E1427D696DF0088228B /* UserRemote+mock.swift */,
+				80319E1627D6972D0088228B /* UserLocalRepositoryMock.swift */,
+				80319E1827D697550088228B /* User+mock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -498,9 +504,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80319E1727D6972D0088228B /* UserLocalRepositoryMock.swift in Sources */,
 				80319E1327D696820088228B /* UserRemoteRepositoryMock.swift in Sources */,
 				80319DB427D6840A0088228B /* RandomUserTechnicalTestTests.swift in Sources */,
 				80319E1527D696DF0088228B /* UserRemote+mock.swift in Sources */,
+				80319E1927D697550088228B /* User+mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
