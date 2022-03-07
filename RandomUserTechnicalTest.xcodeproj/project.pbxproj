@@ -38,6 +38,7 @@
 		80319E0A27D6901D0088228B /* UsersUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E0927D6901D0088228B /* UsersUseCaseProtocol.swift */; };
 		80319E0C27D690610088228B /* UsersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E0B27D690610088228B /* UsersUseCase.swift */; };
 		80319E0E27D6909D0088228B /* ModelConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E0D27D6909D0088228B /* ModelConverter.swift */; };
+		80319E1027D692720088228B /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E0F27D692720088228B /* AppDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		80319E0927D6901D0088228B /* UsersUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersUseCaseProtocol.swift; sourceTree = "<group>"; };
 		80319E0B27D690610088228B /* UsersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersUseCase.swift; sourceTree = "<group>"; };
 		80319E0D27D6909D0088228B /* ModelConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConverter.swift; sourceTree = "<group>"; };
+		80319E0F27D692720088228B /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				80319DA527D684090088228B /* Assets.xcassets */,
 				80319DA727D684090088228B /* LaunchScreen.storyboard */,
 				80319DAA27D684090088228B /* Info.plist */,
+				80319E0F27D692720088228B /* AppDependencies.swift */,
 			);
 			path = RandomUserTechnicalTest;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				80319DED27D68D460088228B /* RemoteConfiguration.swift in Sources */,
 				80319E0E27D6909D0088228B /* ModelConverter.swift in Sources */,
 				80319DEA27D68CF40088228B /* RemoteDataProvider.swift in Sources */,
+				80319E1027D692720088228B /* AppDependencies.swift in Sources */,
 				80319DF727D68E080088228B /* UserRemoteRepository.swift in Sources */,
 				80319DF227D68DAC0088228B /* UserRemoteResponse.swift in Sources */,
 				80319DF027D68D9B0088228B /* UserRemote.swift in Sources */,
