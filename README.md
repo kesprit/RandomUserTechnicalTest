@@ -72,6 +72,7 @@ This description should explain the whole commit's content.
 Many things are still to be done:
 
 - Implement a Coordinator to manage the navigation between screens
+- Put a default View with a message when no users was found
 - Unit tests for all `data` and `domain` objects: at this moment, I tested only `UsersUseCase` just for showing an example.
 - Make refresh datas in TableView better and smooth.
 - Using `Swinject` instead of home solution for manage dependencies.
