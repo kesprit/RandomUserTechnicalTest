@@ -32,15 +32,15 @@ final class UsersListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-         cell.textLabel?.text = viewModel.users[indexPath.row].username
-         return cell
-     }
-
-
-     // MARK: private functions
-     private func setup() {
-         title = "RandomUser"
-         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-     }
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! UserRowTableViewCell
+        cell.set(viewModel: viewModel.users[indexPath.row])
+        return cell
+    }
+    
+    
+    // MARK: private functions
+    private func setup() {
+        title = "RandomUser"
+        tableView.register(UserRowTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+    }
 }
