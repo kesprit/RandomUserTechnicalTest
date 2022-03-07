@@ -59,6 +59,6 @@ final class UsersViewModel: ObservableObject {
     }
     
     func showUserDetail(for user: UserViewModel) {
-        navigationController?.pushViewController(UserDetailViewController(), animated: true)
+        navigationController?.pushViewController(UserDetailViewController(viewModel: .init(user: user)), animated: true)
     }
 }
