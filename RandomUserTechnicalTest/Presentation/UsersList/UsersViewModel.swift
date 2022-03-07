@@ -12,6 +12,10 @@ final class UsersViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var showError = false
     
+    let genericErrorTitle: String = "Error"
+    let genericErrorMessage: String = "Something wrong"
+    let genericErrorActionTitle: String = "Retry"
+    
     private let userUseCase: UsersUseCaseProtocol
     private var cancelable: AnyCancellable?
     

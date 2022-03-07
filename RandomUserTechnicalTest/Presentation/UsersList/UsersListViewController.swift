@@ -83,6 +83,16 @@ final class UsersListViewController: UITableViewController {
     
     // MARK: - GenericError
     private func showGenericError() {
-        // TODO: Make an alert
+        let alert = UIAlertController(title: viewModel.genericErrorTitle,
+                                      message: viewModel.genericErrorMessage,
+                                      preferredStyle: .actionSheet)
+        alert.addAction(.init(title: viewModel.genericErrorActionTitle,
+                              style: .default,
+                              handler: retryFetch))
+        self.show(alert, sender: self)
+    }
+    
+    private func retryFetch(_ alert: UIAlertAction) {
+        viewModel.fetchUsers()
     }
 }
