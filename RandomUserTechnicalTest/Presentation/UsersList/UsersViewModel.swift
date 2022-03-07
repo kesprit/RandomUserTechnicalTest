@@ -57,4 +57,8 @@ final class UsersViewModel: ObservableObject {
                 self?.isLoading = false
             }
     }
+    
+    func showUserDetail(for user: UserViewModel) {
+        navigationController?.pushViewController(UserDetailViewController(), animated: true)
+    }
 }

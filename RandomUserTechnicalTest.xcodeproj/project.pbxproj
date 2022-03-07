@@ -45,6 +45,7 @@
 		80319E1C27D699980088228B /* UserViewModel+equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E1B27D699980088228B /* UserViewModel+equatable.swift */; };
 		80319E1F27D69A300088228B /* XCTestCase+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E1E27D69A300088228B /* XCTestCase+extension.swift */; };
 		80319E2127D69A720088228B /* UsersUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E2027D69A720088228B /* UsersUseCaseTests.swift */; };
+		80319E2427D6B3B30088228B /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80319E2327D6B3B30088228B /* UserDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		80319E1B27D699980088228B /* UserViewModel+equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserViewModel+equatable.swift"; sourceTree = "<group>"; };
 		80319E1E27D69A300088228B /* XCTestCase+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+extension.swift"; sourceTree = "<group>"; };
 		80319E2027D69A720088228B /* UsersUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersUseCaseTests.swift; sourceTree = "<group>"; };
+		80319E2327D6B3B30088228B /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 		80319DD227D687FE0088228B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				80319E2227D6B38C0088228B /* UserDetail */,
 				80319DD527D688260088228B /* UsersList */,
 				80319DDC27D68A340088228B /* UserViewModel.swift */,
 			);
@@ -348,6 +351,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		80319E2227D6B38C0088228B /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				80319E2327D6B3B30088228B /* UserDetailViewController.swift */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -488,6 +499,7 @@
 			files = (
 				80319DE527D68C790088228B /* UserEnpoint.swift in Sources */,
 				80319DE327D68C4C0088228B /* Endpoint.swift in Sources */,
+				80319E2427D6B3B30088228B /* UserDetailViewController.swift in Sources */,
 				80319D9D27D684080088228B /* AppDelegate.swift in Sources */,
 				80319E0C27D690610088228B /* UsersUseCase.swift in Sources */,
 				80319DDB27D689990088228B /* UsersViewModel.swift in Sources */,

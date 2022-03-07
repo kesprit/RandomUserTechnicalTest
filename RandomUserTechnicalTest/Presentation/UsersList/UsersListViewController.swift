@@ -41,6 +41,10 @@ final class UsersListViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.showUserDetail(for: viewModel.users[indexPath.row])
+    }
+    
     // MARK: - ScrollView
      override func scrollViewDidScroll(_ scrollView: UIScrollView) {
          guard scrollView.contentOffset.y > (tableView.contentSize.height-200) - scrollView.frame.size.height else { return }
